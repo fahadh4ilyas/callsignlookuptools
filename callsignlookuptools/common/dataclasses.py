@@ -7,7 +7,7 @@ Released under the terms of the BSD 3-Clause license.
 
 
 from dataclasses import dataclass
-from typing import Union, Optional
+from typing import Union, Optional, List
 from datetime import datetime
 
 from pydantic import BaseModel
@@ -232,7 +232,7 @@ class CallsignData:
     #: the callsign, as received from the lookup service. Not always the same as the query.
     callsign: Optional[str] = None
     #: alias callsigns
-    aliases: Optional[list[str]] = None
+    aliases: Optional[List[str]] = None
     #: trustee info
     trustee: Optional[Trustee] = None
     #: license class. Some lookup services have a defined set of classes.

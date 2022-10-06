@@ -7,7 +7,7 @@ Released under the terms of the BSD 3-Clause license.
 
 
 from abc import ABC, abstractmethod
-from typing import Optional
+from typing import Optional, List, Tuple
 from datetime import datetime
 
 from gridtools import Grid, LatLong
@@ -20,7 +20,7 @@ from ..common.constants import DEFAULT_USERAGENT
 class QrzDataModel(BaseModel):
     call: Optional[str] = None
     xref: Optional[str] = None
-    aliases: Optional[list[str]] = None
+    aliases: Optional[List[str]] = None
     trustee: Optional[str] = None
     dxcc: Optional[int] = None
     fname: Optional[str] = None
@@ -52,7 +52,7 @@ class QrzDataModel(BaseModel):
     bio: Optional[int] = None
     biodate: Optional[datetime] = None
     image: Optional[str] = None
-    imageinfo: Optional[tuple[int, int, int]] = None
+    imageinfo: Optional[Tuple[int, int, int]] = None
     serial: Optional[str] = None
     moddate: Optional[datetime] = None
     MSA: Optional[str] = None
