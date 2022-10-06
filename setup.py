@@ -37,7 +37,10 @@ setup(
         "lxml",
         "gridtools",
         "pydantic",
-        "requests; extra != 'async'"
+        "requests",
+        "aiohttp",
+        "typer[all]",
+        "click-help-colors"
     ],
     extras_require={
         "cli": ["typer[all]", "click-help-colors"],
