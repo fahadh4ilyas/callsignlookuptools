@@ -21,7 +21,7 @@ setup(
     classifiers=[
         "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.8",
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
         "Intended Audience :: Developers",
@@ -47,5 +47,5 @@ setup(
         "async": ["aiohttp"],
         "all": ["aiohttp"]
     },
-    python_requires=">=3.9",
+    python_requires=">=3.8",
 )
